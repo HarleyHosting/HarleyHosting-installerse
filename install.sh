@@ -10,11 +10,11 @@ NC='\033[0m'
 # Display welcome message
 display_welcome() {
   echo -e ""
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                                                          [+]${NC}"
-  echo -e "${BLUE}[+]                AUTO INSTALLER THEMA                 [+]${NC}"
-  echo -e "${BLUE}[+]                  © HARLEY HOSTING                    [+]${NC}"
-  echo -e "${BLUE}[+]                                                          [+]${NC}"
+  echo -e "${BLUE}[+] ============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                                                [+]${NC}"
+  echo -e "${BLUE}[+]                AUTO INSTALLER THEMA            [+]${NC}"
+  echo -e "${BLUE}[+]                  © HARLEY HOSTING              [+]${NC}"
+  echo -e "${BLUE}[+]                                                [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
@@ -56,7 +56,7 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY FADHOST OFFC             [+]${NC}"
+  echo -e "${BLUE}[+]             KUNCI BY HARLEY HOSTING             [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
@@ -92,7 +92,7 @@ install_theme() {
     read -r SELECT_THEME
     case "$SELECT_THEME" in
       1)
-        THEME_URL=$(echo -e "https://github.com/gitfdil1248/thema/raw/main/C2.zip")
+        THEME_URL=$(echo -e "https://raw.githubusercontent.com/HarleyHosting/HarleyHosting-installerse/master/C2.zip") 
         break
         ;;
       2)
@@ -100,7 +100,7 @@ install_theme() {
         break
         ;;
       3)
-        THEME_URL=$(echo -e "https://github.com/gitfdil1248/thema/raw/main/C3.zip")
+        THEME_URL=$(echo -e "https://raw.githubusercontent.com/HarleyHosting/HarleyHosting-installerse/master/C3.zip") 
         break
         ;; 
       x)
@@ -226,7 +226,7 @@ uninstall_theme() {
   echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/gitfdil1248/thema/main/repair.sh)
+  bash <(curl https://raw.githubusercontent.com/HarleyHosting/HarleyHosting-installerse/master/repair.sh)
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]                 DELETE THEME SUKSES             [+]${NC}"
@@ -245,7 +245,7 @@ echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "                                                                   "
 
 # Unduh file tema
-wget -O /root/C2.zip https://github.com/gitfdil1248/thema/raw/main/C2.zip
+wget -O /root/C2.zip https://raw.githubusercontent.com/HarleyHosting/HarleyHosting-installerse/master/C2.zip
 
 # Ekstrak file tema
 unzip /root/C2.zip -d /root/pterodactyl
@@ -504,23 +504,16 @@ check_token
 
 while true; do
   clear
-  echo -e "                                                                     "
-  echo -e "${RED}        _,gggggggggg.                                     ${NC}"
-  echo -e "${RED}    ,ggggggggggggggggg.                                   ${NC}"
-  echo -e "${RED}  ,ggggg        gggggggg.                                 ${NC}"
-  echo -e "${RED} ,ggg'               'ggg.                                ${NC}"
-  echo -e "${RED}',gg       ,ggg.      'ggg:                               ${NC}"
-  echo -e "${RED}'ggg      ,gg'''  .    ggg       Auto Installer HarleyHosting   ${NC}"
-  echo -e "${RED}gggg      gg     ,     ggg      ------------------------  ${NC}"
-  echo -e "${RED}ggg:     gg.     -   ,ggg       • Telegram : @HarleyHostt      ${NC}"
-  echo -e "${RED} ggg:     ggg._    _,ggg        • Creadit  : HARLEYHOSTING  ${NC}"
-  echo -e "${RED} ggg.    '.'''ggggggp           • Support by HarleyHosting  ${NC}"
-  echo -e "${RED}  'ggg    '-.__                                           ${NC}"
-  echo -e "${RED}    ggg                                                   ${NC}"
-  echo -e "${RED}      ggg                                                 ${NC}"
-  echo -e "${RED}        ggg.                                              ${NC}"
-  echo -e "${RED}          ggg.                                            ${NC}"
-  echo -e "${RED}             b.                                           ${NC}"
+  echo -e "                             "
+ echo -e "${RED}╔╗╔╦══╦═╦╗╔═╦═╦╗${NC}"
+ echo -e "${RED}║╚╝║╔╗║╬║║║╦╩╗║║${NC}"
+ echo -e "${RED}║╔╗║╠╣║╗╣╚╣╩╦╩╗║${NC}"
+ echo -e "${RED}╚╝╚╩╝╚╩╩╩═╩═╩══╝${NC}"
+ echo -e "${RED}Auto Installer HarleyHosting ${NC}"
+ echo -e "${RED}---------------------------  ${NC}"
+ echo -e "${RED} • Telegram : @HarleyHostt   ${NC}"
+ echo -e "${RED} • Creadit  : HARLEYHOSTING  ${NC}"
+ echo -e "${RED} • Support by HarleyHosting  ${NC}"
   echo -e "                                                                     "
   echo -e "BERIKUT LIST INSTALL :"
   echo "1. Install theme"
